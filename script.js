@@ -15,3 +15,11 @@ nav?.querySelectorAll('a').forEach((link) => {
 });
 
 document.querySelector('#year').textContent = new Date().getFullYear();
+
+const quoteForm = document.querySelector('#quote-form');
+quoteForm?.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const note = document.querySelector('#form-note');
+  note.textContent = 'The quote form is being connected. Please check back shortly.';
+  note.setAttribute('role', 'status');
+});
