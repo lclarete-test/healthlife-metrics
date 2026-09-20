@@ -55,9 +55,35 @@ document.querySelector('#analytics-decline')?.addEventListener('click', () => {
 });
 
 const quoteForm = document.querySelector('#quote-form');
-quoteForm?.addEventListener('submit', (event) => {
+const quoteEndpoint = 'https://script.google.com/macros/s/AKfycbwYzjpZznJxbVQ-fBaeUGaosVxLjLC_4J7sf_HJqF7MzxW5iWdRyb8F7DlXXC74gt8c/exec';
+
+quoteForm?.addEventListener('submit', async (event) => {
   event.preventDefault();
   const note = document.querySelector('#form-note');
-  note.textContent = 'The quote form is being connected. Please check back shortly.';
+  const button = quoteForm.querySelector('button[type="submit"]');
+  const payload = Object.fromEntries(new FormData(quoteForm));
+
   note.setAttribute('role', 'status');
+  note.textContent = 'Sending your request...';
+  button.disabled = true;
+
+  try {
+    await fetch(quoteEndpoint, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify(payload),
+    });
+
+    quoteForm.reset();
+    note.textContent = 'Thank you. Your request has been sent. We will be in touch soon.';
+
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'quote_request', { product: payload.product });
+    }
+  } catch (error) {
+    note.textContent = 'We could not send your request. Please try again.';
+  } finally {
+    button.disabled = false;
+  }
 });
