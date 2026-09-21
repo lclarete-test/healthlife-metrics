@@ -105,6 +105,10 @@ h3 { font-size: 1.35rem; }
 .quote input, .quote select, .quote textarea { width: 100%; padding: .8rem .85rem; border: 1px solid var(--line); border-radius: 5px; color: var(--ink); background: white; font: inherit; font-size: 1rem; }
 .quote input:focus, .quote select:focus, .quote textarea:focus { outline: 3px solid rgba(185,232,118,.45); border-color: var(--lime-dark); }
 .quote .full { grid-column: 1 / -1; }
+.quote .optional { color: #627d79; font-size: .78rem; font-weight: 500; }
+.quote .consent { display: flex; align-items: flex-start; gap: .75rem; font-weight: 500; line-height: 1.45; }
+.quote .consent input { width: auto; margin: .18rem 0 0; flex: 0 0 auto; accent-color: var(--lime-dark); }
+.privacy-note { margin: -.25rem 0 0; color: #627d79; font-size: .78rem; line-height: 1.45; }
 .form-honeypot { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
 .form-note { margin: 0; color: #627d79; font-size: .8rem; }
 .button-light { flex: 0 0 auto; color: var(--ink); background: var(--lime); }
