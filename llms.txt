@@ -2,19 +2,25 @@
 
 > Research and analytics for healthcare decisions.
 
-HealthLife Metrics provides healthcare market research, competitive intelligence, patient and healthcare provider research, UX research, and data analytics.
+HealthLife Metrics provides healthcare market intelligence, patient and healthcare provider research, UX research, and data analytics.
 
 ## Services
 
-- Market Assessment: market size, structure, trends, stakeholders, opportunities, evidence gaps, and decision risks.
-- Competitive Intelligence: competitor profiles, product and feature comparisons, positioning, pricing, partnerships, acquisitions, and market movements.
+- Market Intelligence: market assessment, market sizing, industry trends, stakeholder landscapes, competitor and product analysis, positioning, market movements, and opportunity prioritization.
 - Patient & HCP Research: research with patients, caregivers, physicians, healthcare professionals, and clinical or administrative staff. Methods include interviews, focus groups, surveys, ethnography, netnography, contextual research, journey mapping, segmentation, personas, concept testing, and message testing.
 - UX Research: healthcare website, app, platform, patient portal, professional tool, prototype, usability, information architecture, content clarity, accessibility, and benchmarking research.
-- Analytics: healthcare and research data analysis, surveys, segmentation, journey analytics, behavioral analytics, claims, utilization, treatment patterns, outcomes, statistical modeling, visualization, KPIs, and dashboards.
+- Data Analytics: healthcare, market, research, survey, journey, behavioral, utilization, and product data analysis; statistical modeling, forecasting, visualization, KPIs, and dashboards.
 
 ## Canonical page
 
 - https://healthlifemetrics.com/
+
+## Service pages
+
+- https://healthlifemetrics.com/market-intelligence.html
+- https://healthlifemetrics.com/patient-hcp-research.html
+- https://healthlifemetrics.com/ux-research.html
+- https://healthlifemetrics.com/analytics.html
 
 ## Contact
 
