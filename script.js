@@ -55,7 +55,7 @@ document.querySelector('#analytics-decline')?.addEventListener('click', () => {
 });
 
 const quoteForm = document.querySelector('#quote-form');
-const quoteEndpoint = 'https://script.google.com/macros/s/AKfycbwYzjpZznJxbVQ-fBaeUGaosVxLjLC_4J7sf_HJqF7MzxW5iWdRyb8F7DlXXC74gt8c/exec';
+const quoteEndpoint = 'https://script.google.com/macros/s/AKfycbzfQS4IZp0P9cbbh5nMgbvd_oHN02xjrEApnqRhY5F9hvy_-taCaqj5TffZw5X1Bxmg/exec';
 
 quoteForm?.addEventListener('submit', async (event) => {
   event.preventDefault();
