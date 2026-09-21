@@ -1,0 +1,25 @@
+# HealthLife Metrics
+
+> Research and analytics for healthcare decisions.
+
+HealthLife Metrics provides healthcare market research, competitive intelligence, patient and healthcare provider research, UX research, and data analytics.
+
+## Services
+
+- Market Assessment: market size, structure, trends, stakeholders, opportunities, evidence gaps, and decision risks.
+- Competitive Intelligence: competitor profiles, product and feature comparisons, positioning, pricing, partnerships, acquisitions, and market movements.
+- Patient & HCP Research: research with patients, caregivers, physicians, healthcare professionals, and clinical or administrative staff. Methods include interviews, focus groups, surveys, ethnography, netnography, contextual research, journey mapping, segmentation, personas, concept testing, and message testing.
+- UX Research: healthcare website, app, platform, patient portal, professional tool, prototype, usability, information architecture, content clarity, accessibility, and benchmarking research.
+- Analytics: healthcare and research data analysis, surveys, segmentation, journey analytics, behavioral analytics, claims, utilization, treatment patterns, outcomes, statistical modeling, visualization, KPIs, and dashboards.
+
+## Canonical page
+
+- https://healthlifemetrics.com/
+
+## Contact
+
+- Use the Request a Quote form at https://healthlifemetrics.com/#quote
+
+## Rights
+
+© Health Life Metrics & Analytics LLC. Content may be indexed and referenced with attribution. No transfer of ownership is granted.
