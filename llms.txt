@@ -16,6 +16,14 @@ HealthLife Metrics provides healthcare market research, competitive intelligence
 
 - https://healthlifemetrics.com/
 
+## Service pages
+
+- https://healthlifemetrics.com/market-assessment.html
+- https://healthlifemetrics.com/competitive-intelligence.html
+- https://healthlifemetrics.com/patient-hcp-research.html
+- https://healthlifemetrics.com/ux-research.html
+- https://healthlifemetrics.com/analytics.html
+
 ## Contact
 
 - Use the Request a Quote form at https://healthlifemetrics.com/#quote
