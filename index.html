@@ -119,10 +119,11 @@
       </div>
       <form id="quote-form">
         <label class="form-honeypot" aria-hidden="true">Website<input name="website" type="text" tabindex="-1" autocomplete="off"></label>
-        <label>Work email<input name="email" type="email" autocomplete="email" required></label>
-        <label>Organization<input name="organization" type="text" autocomplete="organization" required></label>
-        <label>What do you need?
-          <select name="product" required>
+        <label>Work email <span aria-hidden="true">*</span><input name="email" type="email" autocomplete="email" required></label>
+        <label>Organization <span class="optional">(optional)</span><input name="organization" type="text" autocomplete="organization"></label>
+        <label>Phone <span class="optional">(optional)</span><input name="phone" type="tel" autocomplete="tel"></label>
+        <label>What do you need? <span class="optional">(optional)</span>
+          <select name="product">
             <option value="">Select a product</option>
             <option>Healthcare Market Map</option>
             <option>Patient Evidence Sprint</option>
@@ -130,9 +131,14 @@
             <option>Custom research</option>
           </select>
         </label>
-        <label class="full">Briefly describe the decision or question<textarea name="brief" rows="4" required></textarea></label>
+        <label class="full">Please describe the decision or question <span class="optional">(optional)</span><textarea name="brief" rows="4"></textarea></label>
+        <label class="consent full">
+          <input name="marketingConsent" type="checkbox" value="yes">
+          <span>I agree to receive occasional product updates and research insights by email. I can unsubscribe at any time.</span>
+        </label>
+        <p class="privacy-note full">We will use your contact information to respond to this request. Marketing consent is optional.</p>
         <button class="button button-light full" type="submit">Request a quote</button>
-        <p class="form-note full" id="form-note">No commitment. We will review your request before proposing a scope.</p>
+        <p class="form-note full" id="form-note">* Required. No commitment. We will review your request before proposing a scope.</p>
       </form>
     </section>
   </main>
