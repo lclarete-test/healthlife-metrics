@@ -13,18 +13,23 @@ HealthLife Metrics provides healthcare market intelligence, patient and healthca
 
 ## Canonical page
 
-- https://healthlifemetrics.com/
+- [HealthLife Metrics homepage](https://healthlifemetrics.com/)
 
 ## Service pages
 
-- https://healthlifemetrics.com/market-intelligence.html
-- https://healthlifemetrics.com/patient-hcp-research.html
-- https://healthlifemetrics.com/ux-research.html
-- https://healthlifemetrics.com/analytics.html
+- [Healthcare Market Intelligence](https://healthlifemetrics.com/market-intelligence.html)
+- [Patient and HCP Research](https://healthlifemetrics.com/patient-hcp-research.html)
+- [Healthcare UX Research](https://healthlifemetrics.com/ux-research.html)
+- [Healthcare Data Analytics](https://healthlifemetrics.com/analytics.html)
+
+## Discovery
+
+- [XML sitemap](https://healthlifemetrics.com/sitemap.xml)
+- [Robots directives](https://healthlifemetrics.com/robots.txt)
 
 ## Contact
 
-- Use the Request a Quote form at https://healthlifemetrics.com/#quote
+- [Request a quote](https://healthlifemetrics.com/#quote)
 
 ## Rights
 
