@@ -22,3 +22,7 @@ nav a:hover{color:var(--lime)}
 .quote .form-note{color:#b4cbc7}
 .cookie-banner{box-shadow:0 18px 50px rgba(0,0,0,.4)}
 @media(max-width:850px){nav{background:#0e1a1c;border-color:var(--line);box-shadow:0 12px 30px rgba(0,0,0,.35)}.menu-button{color:var(--ink);background:transparent;border-color:var(--lime)}}
+
+/* Contrast correction for dark theme panels */
+.signal-panel,.approach{background:#0e3438;color:#f2faf7}
+.signal-panel .eyebrow,.approach .eyebrow{color:var(--lime)}
