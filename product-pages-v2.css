@@ -91,3 +91,7 @@
   nav a { padding: .72rem .2rem; font-size: .82rem; border-bottom: 1px solid var(--line); }
   nav .nav-cta { margin-top: .55rem; padding: .7rem; border: 1px solid var(--ink); }
 }
+
+/* Contrast correction for dark theme panels */
+.product-panel{background:#0e3438;color:#f2faf7}
+.product-cta{background:#123f46;color:#f2faf7}
