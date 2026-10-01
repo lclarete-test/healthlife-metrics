@@ -66,6 +66,17 @@
   nav.open { display: grid; }
   nav a { padding: .6rem .2rem; }
 }
+
+/* Dark mode theme */
+.breadcrumbs{color:#abc3bf}
+.decision-section,.detail-section,.related{background:var(--paper)}
+.decision-card,.module-card{background:#0e1a1c}
+.file-section{background:var(--aqua)}
+.file-card{background:rgba(14,26,28,.88)}
+.scope-note{background:#0e1a1c}
+.related-card{background:#0e1a1c}
+.product-cta{background:#123f46}
+@media (max-width:900px){nav{background:#0e1a1c}}
 @media (max-width: 520px) {
   .product-hero { width: calc(100% - 2rem); padding: 1.5rem 0 4rem; }
   .breadcrumbs { margin-bottom: 3rem; }
