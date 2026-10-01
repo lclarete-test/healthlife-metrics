@@ -2,12 +2,13 @@
 
 > Research and analytics for healthcare decisions.
 
-HealthLife Metrics provides healthcare market intelligence, patient and healthcare provider research, UX research, and data analytics.
+HealthLife Metrics provides healthcare market intelligence, patient research, HCP and healthcare staff research, UX research, and data analytics.
 
 ## Services
 
 - Market Intelligence: market assessment, market sizing, industry trends, stakeholder landscapes, competitor and product analysis, positioning, market movements, and opportunity prioritization.
-- Patient & HCP Research: research with patients, caregivers, physicians, healthcare professionals, and clinical or administrative staff. Methods include interviews, focus groups, surveys, ethnography, netnography, contextual research, journey mapping, segmentation, personas, concept testing, and message testing.
+- Patient & Caregiver Research: research with patients, caregivers, family members, and care partners. Focus areas include needs, barriers, behaviors, patient journeys, profiling, segmentation, personas, concept testing, and message testing.
+- HCP & Healthcare Staff Research: research with physicians, nurses, pharmacists, allied HCPs, clinical teams, administrative staff, practice managers, and healthcare decision-makers. Focus areas include workflows, referral and treatment decisions, adoption, barriers, stakeholder segmentation, concept testing, and message testing.
 - UX Research: healthcare website, app, platform, patient portal, professional tool, prototype, usability, information architecture, content clarity, accessibility, and benchmarking research.
 - Data Analytics: healthcare, market, research, survey, journey, behavioral, utilization, and product data analysis; statistical modeling, forecasting, visualization, KPIs, and dashboards.
 
@@ -18,7 +19,8 @@ HealthLife Metrics provides healthcare market intelligence, patient and healthca
 ## Service pages
 
 - [Healthcare Market Intelligence](https://healthlifemetrics.com/market-intelligence.html)
-- [Patient and HCP Research](https://healthlifemetrics.com/patient-hcp-research.html)
+- [Patient and Caregiver Research](https://healthlifemetrics.com/patient-research.html)
+- [HCP and Healthcare Staff Research](https://healthlifemetrics.com/hcp-staff-research.html)
 - [Healthcare UX Research](https://healthlifemetrics.com/ux-research.html)
 - [Healthcare Data Analytics](https://healthlifemetrics.com/analytics.html)
 
