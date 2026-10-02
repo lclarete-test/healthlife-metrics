@@ -45,3 +45,12 @@ nav a:hover{color:var(--lime)}
   #site-nav{grid-template-columns:1fr}
   .brand{font-size:1rem}
 }
+
+
+/* Close the 901-1050px navigation visibility gap */
+@media(max-width:1050px){
+  body .menu-button{display:inline-flex;align-items:center;justify-content:center;margin-left:auto}
+}
+@media(min-width:1051px){
+  body .menu-button{display:none}
+}
