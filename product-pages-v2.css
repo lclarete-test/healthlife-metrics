@@ -103,3 +103,9 @@
   .product-page #site-nav a{color:#f2faf7;background:#10282b}
   .product-page #site-nav a:hover,.product-page #site-nav a:focus-visible{color:#071012;background:var(--lime)}
 }
+
+
+/* Keep the menu trigger visible throughout the tablet breakpoint */
+@media(min-width:901px) and (max-width:1050px){
+  .product-page .menu-button{display:inline-flex}
+}
