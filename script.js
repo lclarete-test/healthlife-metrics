@@ -116,3 +116,19 @@ whitepaperForm?.addEventListener('submit', async (event) => {
     button.disabled = false;
   }
 });
+
+
+const exploreWorkLink = document.querySelector('a[href="#evidence-menu"]');
+const evidenceMenu = document.querySelector('#evidence-menu');
+
+exploreWorkLink?.addEventListener('click', (event) => {
+  event.preventDefault();
+  if (!evidenceMenu) return;
+
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  evidenceMenu.scrollIntoView({
+    behavior: reducedMotion ? 'auto' : 'smooth',
+    block: 'center'
+  });
+  window.history.replaceState(null, '', '#evidence-menu');
+});
