@@ -54,3 +54,8 @@ nav a:hover{color:var(--lime)}
 @media(min-width:1051px){
   body .menu-button{display:none}
 }
+
+
+/* Keep Explore our work target visible below the sticky header */
+#evidence-menu{scroll-margin-top:110px}
+@media(max-width:1050px){#evidence-menu{scroll-margin-top:150px}}
