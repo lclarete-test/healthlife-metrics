@@ -87,3 +87,32 @@ quoteForm?.addEventListener('submit', async (event) => {
     button.disabled = false;
   }
 });
+
+
+const whitepaperForm = document.querySelector('#whitepaper-form');
+whitepaperForm?.addEventListener('submit', async (event) => {
+  event.preventDefault();
+  const note = document.querySelector('#whitepaper-note');
+  const downloadLink = document.querySelector('#whitepaper-download');
+  const button = whitepaperForm.querySelector('button[type="submit"]');
+  const payload = Object.fromEntries(new FormData(whitepaperForm));
+  payload.marketing_consent = whitepaperForm.querySelector('[name="marketing_consent"]')?.checked ? 'yes' : 'no';
+  note.textContent = 'Preparing your report...';
+  button.disabled = true;
+  try {
+    await fetch(quoteEndpoint, {
+      method: 'POST', mode: 'no-cors',
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify(payload),
+    });
+    whitepaperForm.reset();
+    note.textContent = 'Your report is ready.';
+    downloadLink.hidden = false;
+    downloadLink.focus();
+    if (typeof window.gtag === 'function') window.gtag('event', 'whitepaper_lead', { report: 'hcp_digital_profiling' });
+  } catch (error) {
+    note.textContent = 'We could not prepare the report. Please try again.';
+  } finally {
+    button.disabled = false;
+  }
+});
