@@ -95,3 +95,11 @@
 /* Contrast correction for dark theme panels */
 .product-panel{background:#0e3438;color:#f2faf7}
 .product-cta{background:#123f46;color:#f2faf7}
+
+
+/* Product-page responsive navigation: keep the open menu legible at every width */
+@media(max-width:1050px){
+  .product-page #site-nav{background:#0e1a1c;border-color:#294447}
+  .product-page #site-nav a{color:#f2faf7;background:#10282b}
+  .product-page #site-nav a:hover,.product-page #site-nav a:focus-visible{color:#071012;background:var(--lime)}
+}
