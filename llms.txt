@@ -1,38 +1,49 @@
 # HealthLife Metrics
 
-> Research and analytics for healthcare decisions.
+> Healthcare research, clinical usability, and market intelligence for pharma, CROs, and healthtech.
 
-HealthLife Metrics provides healthcare market intelligence, patient research, HCP and healthcare staff research, UX research, and data analytics.
+HealthLife Metrics provides healthcare market intelligence, patient and caregiver research, HCP and staff research, UX research, and data analytics. Projects are scoped around product, market, launch, and healthcare experience decisions. Geographic focus includes the United States and Latin America.
 
-## Services
+## Core Capabilities & Services
 
-- Market Intelligence: market assessment, market sizing, industry trends, stakeholder landscapes, competitor and product analysis, positioning, market movements, and opportunity prioritization.
-- Patient & Caregiver Research: research with patients, caregivers, family members, and care partners. Focus areas include needs, barriers, behaviors, patient journeys, profiling, segmentation, personas, concept testing, and message testing.
-- HCP & Healthcare Staff Research: research with physicians, nurses, pharmacists, allied HCPs, clinical teams, administrative staff, practice managers, and healthcare decision-makers. Focus areas include workflows, referral and treatment decisions, adoption, barriers, stakeholder segmentation, concept testing, and message testing.
-- UX Research: healthcare website, app, platform, patient portal, professional tool, prototype, usability, information architecture, content clarity, accessibility, and benchmarking research.
-- Data Analytics: healthcare, market, research, survey, journey, behavioral, utilization, and product data analysis; statistical modeling, forecasting, visualization, KPIs, and dashboards.
+- [Market Intelligence](https://healthlifemetrics.com/market-intelligence.html): Market assessment, market sizing, industry trends, competitive and product landscapes, stakeholder mapping, positioning, and market-entry opportunity prioritization.
+- [Patient & Caregiver Research](https://healthlifemetrics.com/patient-research.html): Interviews, surveys, focus groups, ethnography, and contextual research on needs, behaviors, barriers, journeys, patient and caregiver personas, segmentation, and concept and message testing.
+- [HCP & Staff Research](https://healthlifemetrics.com/hcp-staff-research.html): Research with healthcare professionals and staff on workflows, decisions, adoption, barriers, digital profiling, stakeholder segmentation, and concept and message testing.
+- [Healthcare UX Research](https://healthlifemetrics.com/ux-research.html): Research on healthcare websites, apps, patient portals, professional tools, prototypes, usability, task completion, information architecture, content clarity, accessibility, and product experience.
+- [Healthcare Data Analytics](https://healthlifemetrics.com/analytics.html): Population and geographic analytics, survey analysis, behavioral and journey analytics, data quality, source reconciliation, measurement frameworks, visualization, and dashboards. Multiple sources are joined or compared only where definitions, units, identifiers, geography, and time periods support a meaningful connection.
 
-## Canonical page
+Clinical workflow and usability research and formal regulatory validation are distinct scopes. Requirements for sensitive data, regulatory validation, or clinical endpoints must be assessed before work begins.
 
-- [HealthLife Metrics homepage](https://healthlifemetrics.com/)
+## Case Studies & Applied Evidence
 
-## Service pages
+### PCOS Supplement Market Intelligence
+An anonymized client case study on positioning a new inositol supplement. The study connected competitor claims and product positioning, search behavior, public audience signals, patient profiles, and product reviews. It explored a credible market position and communication needs; it does not report measured treatment adherence or clinical effectiveness.
+- [PCOS case study](https://healthlifemetrics.com/pcos-market-intelligence-case-study.html)
 
-- [Healthcare Market Intelligence](https://healthlifemetrics.com/market-intelligence.html)
-- [Patient and Caregiver Research](https://healthlifemetrics.com/patient-research.html)
-- [HCP and Healthcare Staff Research](https://healthlifemetrics.com/hcp-staff-research.html)
-- [Healthcare UX Research](https://healthlifemetrics.com/ux-research.html)
-- [Healthcare Data Analytics](https://healthlifemetrics.com/analytics.html)
+### Ophthalmic Syringe Market Intelligence in Colombia
+An anonymized client case study assessing the market-entry opportunity for a zero-residual ophthalmic syringe. Methods included a survey of 24 clinics, treatment-volume estimation, medication pricing and economics, INVIMA regulatory context, clinical workflow research, and conversations with retina specialists and market stakeholders. Volume estimates are directional planning inputs. The case is not presented as formal clinical usability validation.
+- [Ophthalmic syringe case study](https://healthlifemetrics.com/ophthalmic-syringe-colombia-case-study.html)
 
-## Discovery
+### Oncology HCP Digital Profiling & Professional Network Analysis
+An anonymized historical case study supporting medical device launch communication. The work connected digital audience and professional affinity analysis with qualitative review of public clinician material, professional segmentation, and detailed clinician profiles. Platform-estimated affinities do not establish endorsement or product adoption, and campaign performance was outside the case scope.
+- [HCP digital profiling case study](https://healthlifemetrics.com/hcp-staff-research.html#hl-case)
+- [HCP Digital Profiling Whitepaper](https://healthlifemetrics.com/HCP-Digital-Profiling-Whitepaper.pdf)
 
-- [XML sitemap](https://healthlifemetrics.com/sitemap.xml)
-- [Robots directives](https://healthlifemetrics.com/robots.txt)
+### Mapping the US Health Insurance Gap
+An independent public-data analytics demonstration using Census Bureau 2024 SAHIE estimates. Two state maps distinguish uninsured rates from population counts, with an income comparison and state explorer. The population is people under age 65 in the SAHIE poverty universe across 50 states and Washington, DC. The analysis supports geographic investigation and outreach planning; it does not determine individual benefit eligibility or estimate reachable customers.
+- [Census health analytics case study](https://healthlifemetrics.com/census-health-analytics-case-study.html)
 
-## Contact
+## Data Privacy & Confidentiality
 
-- [Request a quote](https://healthlifemetrics.com/#quote)
+Data permissions, confidentiality, participant consent, recording permissions, access, and retention are defined for each project. Nondisclosure and data-use terms can be agreed during scoping. Before work involving protected health information, HIPAA applicability, business associate requirements, and a suitable data environment must be confirmed. Do not submit patient-identifiable records through the website quote form.
 
-## Rights
+## Canonical & Architecture Links
+
+- [Homepage](https://healthlifemetrics.com/)
+- [XML Sitemap](https://healthlifemetrics.com/sitemap.xml)
+- [Robots Directives](https://healthlifemetrics.com/robots.txt)
+- [Request a Quote](https://healthlifemetrics.com/#quote)
+
+## Rights & Attribution
 
 © Health Life Metrics & Analytics LLC. Content may be indexed and referenced with attribution. No transfer of ownership is granted.
