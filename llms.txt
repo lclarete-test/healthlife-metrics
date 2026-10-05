@@ -33,12 +33,17 @@ An anonymized historical case study supporting medical device launch communicati
 An independent public-data analytics demonstration using Census Bureau 2024 SAHIE estimates. Two state maps distinguish uninsured rates from population counts, with an income comparison and state explorer. The population is people under age 65 in the SAHIE poverty universe across 50 states and Washington, DC. The analysis supports geographic investigation and outreach planning; it does not determine individual benefit eligibility or estimate reachable customers.
 - [Census health analytics case study](https://healthlifemetrics.com/census-health-analytics-case-study.html)
 
+### HealthyFlow Product Strategy & Workflow Design
+An early-stage product definition example connecting a five-module care program lifecycle, stakeholder tasks, enrollment, recurring work, evidence, and payment visibility. Based on documented product planning; participant usability tests and measured improvements are not reported.
+  - [HealthyFlow Workflow Design Case Study](https://healthlifemetrics.com/healthyflow-ux-case-study.html)
+
+### Alzheimer's Patient & Caregiver Journey
+An anonymized historical digital ethnography case based on a Brazilian research report and patient journey presentation containing material through 2022. The English journey map separates caregiver tasks from patient experiences described in online accounts and identifies information, access, daily-care, and support needs. Findings are exploratory and do not establish prevalence or clinical outcomes.
+- [Alzheimer patient and caregiver journey case study](https://healthlifemetrics.com/alzheimer-patient-caregiver-journey-case-study.html)
+
 ## Data Privacy & Confidentiality
 
 Data permissions, confidentiality, participant consent, recording permissions, access, and retention are defined for each project. Nondisclosure and data-use terms can be agreed during scoping. Before work involving protected health information, HIPAA applicability, business associate requirements, and a suitable data environment must be confirmed. Do not submit patient-identifiable records through the website quote form.
-
-- **HealthyFlow Product Strategy & Workflow Design**: An early-stage product definition example connecting a five-module care program lifecycle, stakeholder tasks, enrollment, recurring work, evidence, and payment visibility. Based on documented product planning; participant usability tests and measured improvements are not reported.
-  - [HealthyFlow Workflow Design Case Study](https://healthlifemetrics.com/healthyflow-ux-case-study.html)
 
 ## Canonical & Architecture Links
 
@@ -50,4 +55,5 @@ Data permissions, confidentiality, participant consent, recording permissions, a
 ## Rights & Attribution
 
 © Health Life Metrics & Analytics LLC. Content may be indexed and referenced with attribution. No transfer of ownership is granted.
+
 
