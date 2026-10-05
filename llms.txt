@@ -37,6 +37,9 @@ An independent public-data analytics demonstration using Census Bureau 2024 SAHI
 
 Data permissions, confidentiality, participant consent, recording permissions, access, and retention are defined for each project. Nondisclosure and data-use terms can be agreed during scoping. Before work involving protected health information, HIPAA applicability, business associate requirements, and a suitable data environment must be confirmed. Do not submit patient-identifiable records through the website quote form.
 
+- **HealthyFlow Product Strategy & Workflow Design**: An early-stage product definition example connecting a five-module care program lifecycle, stakeholder tasks, enrollment, recurring work, evidence, and payment visibility. Based on documented product planning; participant usability tests and measured improvements are not reported.
+  - [HealthyFlow Workflow Design Case Study](https://healthlifemetrics.com/healthyflow-ux-case-study.html)
+
 ## Canonical & Architecture Links
 
 - [Homepage](https://healthlifemetrics.com/)
@@ -47,3 +50,4 @@ Data permissions, confidentiality, participant consent, recording permissions, a
 ## Rights & Attribution
 
 © Health Life Metrics & Analytics LLC. Content may be indexed and referenced with attribution. No transfer of ownership is granted.
+
