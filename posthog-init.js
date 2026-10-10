@@ -27,6 +27,7 @@ function startSitePosthog() {
     });
 }
 window.startHealthLifePosthog = startSitePosthog;
+if (localStorage.getItem("healthlife-analytics-consent") === "accepted") startSitePosthog();
 document.addEventListener('click', function(event) {
     const link = event.target.closest && event.target.closest('a[href]');
     if (!link || !window.__sitePosthogStarted) return;
