@@ -21,6 +21,7 @@ const analyticsPreferenceKey = 'healthlife-analytics-consent';
 const cookieBanner = document.querySelector('#cookie-banner');
 
 const startAnalytics = () => {
+  window.startHealthLifePosthog?.();
   if (window.dataLayer) return;
 
   window.dataLayer = [];
@@ -75,6 +76,7 @@ quoteForm?.addEventListener('submit', async (event) => {
       body: JSON.stringify(payload),
     });
 
+    if (window.__sitePosthogStarted) window.posthog?.capture('quote_request_submit');
     quoteForm.reset();
     note.textContent = 'Thank you. Your request has been sent. We will be in touch soon.';
 
@@ -105,6 +107,7 @@ whitepaperForm?.addEventListener('submit', async (event) => {
       headers: { 'Content-Type': 'text/plain;charset=utf-8' },
       body: JSON.stringify(payload),
     });
+    if (window.__sitePosthogStarted) window.posthog?.capture('whitepaper_lead_submit', {report: 'hcp_digital_profiling'});
     whitepaperForm.reset();
     note.textContent = 'Your report is ready.';
     downloadLink.hidden = false;
