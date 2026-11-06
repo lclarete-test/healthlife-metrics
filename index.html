@@ -24,7 +24,35 @@
   
   <script src="/posthog-init.js?v=20261010-consent2" defer></script>
 
-<style>body{margin:0;background:#000}</style></head>
+<style>body{margin:0;background:#000}</style><style>#hlm-faithful{--page-width:1120px;--page-gutter:clamp(24px,6vw,88px)}
+#hlm-faithful .hlm-header{width:min(var(--page-width),calc(100% - var(--page-gutter) * 2));margin-inline:auto;padding:28px 0;flex-wrap:nowrap}
+#hlm-faithful .hlm-opening{padding:80px var(--page-gutter) 88px}
+#hlm-faithful .section{width:min(var(--page-width),calc(100% - var(--page-gutter) * 2));margin-inline:auto;padding:56px 0}
+#hlm-faithful .service{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(40px,6vw,88px)}
+#hlm-faithful .service-summary{max-width:420px}
+#hlm-faithful .selected-work-intro{max-width:760px;margin-bottom:32px}
+#hlm-faithful .selected-work-grid{gap:24px}
+#hlm-faithful .selected-work-card{padding:28px}
+#hlm-faithful .home-scope-detail{max-width:900px;margin-top:28px}
+#hlm-faithful .research-menu{position:relative;font:400 15px/1.4 'IBM Plex Sans',Arial,sans-serif}
+#hlm-faithful .research-menu summary{display:flex;align-items:center;gap:10px;min-height:44px;list-style:none;color:#fff;cursor:pointer}
+#hlm-faithful .research-menu summary::-webkit-details-marker{display:none}
+#hlm-faithful .research-menu summary::after{content:"";width:6px;height:6px;border-right:1px solid currentColor;border-bottom:1px solid currentColor;transform:rotate(45deg);margin-top:-4px}
+#hlm-faithful .research-menu[open] summary::after{transform:rotate(225deg);margin-top:3px}
+#hlm-faithful .research-links{position:absolute;top:calc(100% + 12px);right:0;z-index:30;width:340px;padding:14px;background:#131313;border:1px solid #555;border-radius:6px;box-shadow:0 20px 60px #0009;display:grid;gap:2px}
+#hlm-faithful .hlm-nav .research-links a{display:flex;min-height:46px;white-space:normal;padding:12px 14px;font-size:15px;line-height:1.4;border-radius:3px}
+#hlm-faithful .hlm-nav .research-links a:hover,#hlm-faithful .hlm-nav .research-links a:focus-visible{color:#fff;background:#252525}
+#hlm-faithful .research-menu summary:focus-visible{outline:3px solid #69ddf2;outline-offset:5px}
+#hlm-faithful .site-directory{width:min(var(--page-width),calc(100% - var(--page-gutter) * 2));margin:28px auto 0;padding:36px 0;border-top:1px solid #303030;display:grid;grid-template-columns:1fr 1fr;gap:44px}
+#hlm-faithful .site-directory h2{font-size:18px;letter-spacing:0;margin:0 0 18px}
+#hlm-faithful .directory-links{display:grid;gap:12px}
+#hlm-faithful .directory-links a{font:400 15px/1.5 'IBM Plex Sans',Arial,sans-serif;color:#dedede;text-decoration:none;min-height:28px}
+#hlm-faithful .directory-links a:hover{color:#69ddf2;text-decoration:underline}
+#hlm-faithful footer{width:min(var(--page-width),calc(100% - var(--page-gutter) * 2));padding:28px 0;margin:auto}
+@media(max-width:850px){#hlm-faithful .service{grid-template-columns:1fr;gap:28px}#hlm-faithful .section{padding:40px 0}#hlm-faithful .hlm-nav{width:auto!important}#hlm-faithful .hlm-header{flex-wrap:wrap;gap:16px}#hlm-faithful .hlm-opening{padding-top:54px;padding-bottom:64px}}
+@media(max-width:520px){#hlm-faithful .hlm-header{padding:22px 0}#hlm-faithful .hlm-nav{gap:20px!important;flex-wrap:wrap;justify-content:flex-start}#hlm-faithful .research-menu,#hlm-faithful .hlm-nav a{font-size:14px}#hlm-faithful .research-links{left:0;right:auto;width:min(320px,calc(100vw - 48px))}#hlm-faithful .site-directory{grid-template-columns:1fr;gap:28px}#hlm-faithful .selected-work-card{padding:22px}#hlm-faithful .hlm-title{font-size:clamp(31px,7vw,40px)}}
+</style>
+</head>
 <body>
 <div id="hlm-faithful">
 <style>@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Space+Grotesk:wght@400;500&display=swap');
@@ -164,7 +192,25 @@ nav a:hover{color:var(--lime)}
 #hlm-faithful .hlm-project:hover{background:#fff}
 @media(max-width:650px){#hlm-faithful .hlm-header{padding:22px 20px;flex-wrap:wrap;gap:18px}#hlm-faithful .hlm-logo{font-size:22px}#hlm-faithful .hlm-nav{gap:22px!important;justify-content:flex-start}#hlm-faithful .hlm-nav a{font-size:14px}#hlm-faithful .hlm-opening{padding:46px 18px 54px}#hlm-faithful .hlm-title{font-size:clamp(33px,7.2vw,46px);letter-spacing:-1.6px}#hlm-faithful .hlm-kicker{font-size:15px;margin-bottom:25px}#hlm-faithful .hlm-subtitle{font-size:18px;margin-top:25px}}
 </style>
-<header class="hlm-header"><a class="hlm-logo" href="#top">HealthLife Metrics</a><nav class="hlm-nav" aria-label="Main navigation"><a href="#market-intelligence">Expertise</a><a href="#selected-work">Case studies</a><a class="hlm-contact" href="#quote">Contact</a></nav></header>
+<header class="hlm-header">
+  <a class="hlm-logo" href="#top">HealthLife Metrics</a>
+  <nav class="hlm-nav" aria-label="Main navigation">
+    <details class="research-menu" id="evidence-menu">
+      <summary>Research services</summary>
+      <div class="research-links">
+        <a href="/market-intelligence.html">Market Intelligence</a>
+        <a href="/patient-research.html">Patient &amp; Caregiver Research</a>
+        <a href="/hcp-staff-research.html">HCP &amp; Staff Research</a>
+        <a href="/ux-research.html">UX Research</a>
+        <a href="/analytics.html">Data Analytics</a>
+        <a href="/real-world-evidence.html">Real-World Evidence</a>
+      </div>
+    </details>
+    <a href="#selected-work">Case studies</a>
+    <a class="hlm-contact" href="#quote">Contact</a>
+  </nav>
+</header>
+
 
 
   <main id="main">
@@ -329,7 +375,26 @@ nav a:hover{color:var(--lime)}
     </section>
   </main>
 
-  <footer>
+  <section class="site-directory" aria-label="Website directory">
+  <div><h2>Research services</h2><div class="directory-links">
+    <a href="/market-intelligence.html">Market Intelligence</a>
+    <a href="/patient-research.html">Patient &amp; Caregiver Research</a>
+    <a href="/hcp-staff-research.html">HCP &amp; Staff Research</a>
+    <a href="/ux-research.html">UX Research</a>
+    <a href="/analytics.html">Data Analytics</a>
+    <a href="/real-world-evidence.html">Real-World Evidence</a>
+  </div></div>
+  <div><h2>Case studies</h2><div class="directory-links">
+    <a href="/pcos-market-intelligence-case-study.html">PCOS supplement market</a>
+    <a href="/ophthalmic-syringe-colombia-case-study.html">Ophthalmic syringe market</a>
+    <a href="/hcp-staff-research.html#hl-case">Oncology clinician research</a>
+    <a href="/census-health-analytics-case-study.html">US health insurance gap</a>
+    <a href="/alzheimer-patient-caregiver-journey-case-study.html">Alzheimer’s patient and caregiver journeys</a>
+    <a href="/healthyflow-ux-case-study.html">HealthyFlow healthcare UX</a>
+  </div></div>
+</section>
+
+<footer>
     <div class="brand"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>HealthLife <strong>Metrics</strong></span></div>
     <p>Healthcare research and analytics.</p>
     <p>© <span id="year">2026</span> Health Life Metrics &amp; Analytics LLC.</p>
