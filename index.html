@@ -52,7 +52,27 @@
 @media(max-width:850px){#hlm-faithful .service{grid-template-columns:1fr;gap:28px}#hlm-faithful .section{padding:40px 0}#hlm-faithful .hlm-nav{width:auto!important}#hlm-faithful .hlm-header{flex-wrap:wrap;gap:16px}#hlm-faithful .hlm-opening{padding-top:54px;padding-bottom:64px}}
 @media(max-width:520px){#hlm-faithful .hlm-header{padding:22px 0}#hlm-faithful .hlm-nav{gap:20px!important;flex-wrap:wrap;justify-content:flex-start}#hlm-faithful .research-menu,#hlm-faithful .hlm-nav a{font-size:14px}#hlm-faithful .research-links{left:0;right:auto;width:min(320px,calc(100vw - 48px))}#hlm-faithful .site-directory{grid-template-columns:1fr;gap:28px}#hlm-faithful .selected-work-card{padding:22px}#hlm-faithful .hlm-title{font-size:clamp(31px,7vw,40px)}}
 </style>
-</head>
+<style>#hlm-faithful header.hlm-header{display:block!important;padding:28px 0 0}
+#hlm-faithful .hlm-logo{display:inline-flex;margin-bottom:22px}
+#hlm-faithful .hlm-nav.hlm-full-nav{display:flex!important;justify-content:space-between;gap:12px 20px!important;flex-wrap:wrap;padding:0 0 22px!important;border-bottom:1px solid #333!important}
+#hlm-faithful .hlm-full-nav a{font-size:14px;white-space:normal;min-height:44px;max-width:160px;line-height:1.35}
+#hlm-faithful .hlm-full-nav .hlm-contact{padding:10px 16px}
+#hlm-faithful .service.section{position:relative;margin-top:24px;margin-bottom:24px;padding:40px;border:1px solid #303030;border-radius:8px;background:#0b0b0b;gap:48px}
+#hlm-faithful .service.section .number{display:inline-flex;align-items:center;justify-content:center;min-width:36px;height:36px;margin-bottom:22px;border-radius:50%;background:#193033;color:#8be4f3;font-size:13px}
+#hlm-faithful .service.section h2{font-size:clamp(28px,3vw,36px);max-width:410px}
+#hlm-faithful .service.section .service-summary{font-size:16px;line-height:1.65}
+#hlm-faithful .service.section .service-details{padding:10px 0 0 30px;border-left:1px solid #303030}
+#hlm-faithful .service.section .service-details h3{font-size:18px}
+#hlm-faithful .service.section .service-details ul{grid-template-columns:1fr;gap:12px}
+#hlm-faithful #selected-work .selected-work-card{padding:0;background:#000;border:0;border-radius:0}
+#hlm-faithful .case-cover{display:block;width:100%;height:240px;object-fit:cover;border-radius:6px;margin-bottom:22px;background:#eee}
+#hlm-faithful .case-cover.evidence-cover{object-fit:contain;background:#f4f7f5;padding:16px}
+#hlm-faithful #selected-work .selected-work-card h3{font-size:25px;max-width:420px}
+#hlm-faithful #selected-work .selected-work-card p{font-size:16px;max-width:460px}
+#hlm-faithful #selected-work .selected-work-grid{gap:44px 32px}
+@media(max-width:850px){#hlm-faithful .hlm-nav.hlm-full-nav{justify-content:flex-start;gap:12px 28px!important}#hlm-faithful .service.section{padding:28px;gap:24px}#hlm-faithful .service.section .service-details{padding:24px 0 0;border-left:0;border-top:1px solid #303030}#hlm-faithful .service.section .service-details ul{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){#hlm-faithful .hlm-nav.hlm-full-nav{display:grid!important;grid-template-columns:1fr 1fr;gap:8px 18px!important}#hlm-faithful .hlm-full-nav a{max-width:none;font-size:13px}#hlm-faithful .hlm-full-nav .hlm-contact{justify-content:center}#hlm-faithful .service.section{padding:24px;margin-block:18px}#hlm-faithful .service.section .service-details ul{grid-template-columns:1fr}#hlm-faithful .case-cover{height:210px}}
+</style></head>
 <body>
 <div id="hlm-faithful">
 <style>@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Space+Grotesk:wght@400;500&display=swap');
@@ -194,22 +214,17 @@ nav a:hover{color:var(--lime)}
 </style>
 <header class="hlm-header">
   <a class="hlm-logo" href="#top">HealthLife Metrics</a>
-  <nav class="hlm-nav" aria-label="Main navigation">
-    <details class="research-menu" id="evidence-menu">
-      <summary>Research services</summary>
-      <div class="research-links">
-        <a href="/market-intelligence.html">Market Intelligence</a>
-        <a href="/patient-research.html">Patient &amp; Caregiver Research</a>
-        <a href="/hcp-staff-research.html">HCP &amp; Staff Research</a>
-        <a href="/ux-research.html">UX Research</a>
-        <a href="/analytics.html">Data Analytics</a>
-        <a href="/real-world-evidence.html">Real-World Evidence</a>
-      </div>
-    </details>
-    <a href="#selected-work">Case studies</a>
-    <a class="hlm-contact" href="#quote">Contact</a>
+  <nav class="hlm-nav hlm-full-nav" aria-label="Main navigation">
+    <a href="/market-intelligence.html">Market Intelligence</a>
+    <a href="/patient-research.html">Patient &amp; Caregiver Research</a>
+    <a href="/hcp-staff-research.html">HCP &amp; Staff Research</a>
+    <a href="/ux-research.html">UX Research</a>
+    <a href="/analytics.html">Data Analytics</a>
+    <a href="/real-world-evidence.html">Real-World Evidence</a>
+    <a class="hlm-contact" href="#quote">Get a quote</a>
   </nav>
 </header>
+
 
 
 
@@ -329,7 +344,7 @@ nav a:hover{color:var(--lime)}
     </section>
 
 <section class="service section" id="real-world-evidence"><div class="service-heading"><span class="number">06</span><p class="eyebrow">Evidence generation support</p><h2>Real-World Evidence</h2><p class="service-summary">Support RWE initiatives with patient and HCP research, evidence-gap assessment, and analysis of suitable healthcare data. Understand care journeys, access barriers, and unmet needs in everyday care.</p></div><div class="service-details"><h3>How we can contribute</h3><ul><li>Evidence needs and research question development</li><li>Patient and HCP perspectives</li><li>Care pathways and barriers to access</li><li>Data-source assessment and descriptive analysis</li><li>Research synthesis and evidence communication</li><li>Collaboration with medical and research teams</li></ul><a href="/real-world-evidence.html">Explore Real-World Evidence <span></span></a></div></section>
-    <section class="section selected-work" id="selected-work"><div class="selected-work-intro"><p class="eyebrow">Applied research and analytics</p><h2>Case studies and field evidence</h2><p class="service-summary">Explore research for product positioning, medical device entry, and healthcare audiences, alongside an independent analysis of public population data.</p></div><div class="selected-work-grid"><article class="selected-work-card"><p class="eyebrow">Women's health · Market intelligence</p><h3><a href="/pcos-market-intelligence-case-study.html">Finding a clearer position in the PCOS supplement market.</a></h3><p>Connect competitor positioning, search behavior, audience signals, and product reviews to identify a credible position for a new inositol supplement.</p><p class="selected-work-kind">Anonymized client case study</p><a class="selected-work-link" href="/pcos-market-intelligence-case-study.html">Explore the study <span aria-hidden="true"></span><span class="selected-work-sr">: Finding a clearer position in the PCOS supplement market.</span></a></article><article class="selected-work-card"><p class="eyebrow">Medical devices · Colombia</p><h3><a href="/ophthalmic-syringe-colombia-case-study.html">Evaluating the market for an ophthalmic syringe.</a></h3><p>Combine clinic research, treatment-volume estimates, pricing, and specialist conversations to assess the entry opportunity for a zero-residual syringe.</p><p class="selected-work-kind">Anonymized client case study</p><a class="selected-work-link" href="/ophthalmic-syringe-colombia-case-study.html">Explore the study <span aria-hidden="true"></span><span class="selected-work-sr">: Evaluating the market for an ophthalmic syringe.</span></a></article><article class="selected-work-card"><p class="eyebrow">Oncology · HCP research</p><h3><a href="/hcp-staff-research.html#hl-case">Understanding clinician audiences before a device launch.</a></h3><p>Use digital profiling, professional affinity networks, and qualitative reviews of public clinician material to inform segmentation and launch communication.</p><p class="selected-work-kind">Anonymized client case study</p><a class="selected-work-link" href="/hcp-staff-research.html#hl-case">Explore the study <span aria-hidden="true"></span><span class="selected-work-sr">: Understanding clinician audiences before a device launch.</span></a></article><article class="selected-work-card"><p class="eyebrow">Population health · Data analytics</p><h3><a href="/census-health-analytics-case-study.html">Mapping the US health insurance gap.</a></h3><p>Compare Census estimates of uninsured rates, population counts, and income groups to identify starting points for access research and outreach planning.</p><p class="selected-work-kind">Independent public-data study</p><a class="selected-work-link" href="/census-health-analytics-case-study.html">Explore the study <span aria-hidden="true"></span><span class="selected-work-sr">: Mapping the US health insurance gap.</span></a></article></div></section>
+    <section class="section selected-work" id="selected-work"><div class="selected-work-intro"><p class="eyebrow">Applied research and analytics</p><h2>Case studies and field evidence</h2><p class="service-summary">Explore research for product positioning, medical device entry, and healthcare audiences, alongside an independent analysis of public population data.</p></div><div class="selected-work-grid"><article class="selected-work-card"><img class="case-cover " src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=1000&q=85" alt="Illustrative photograph of pharmaceutical products" loading="lazy" width="560" height="280"><p class="eyebrow">Women's health · Market intelligence</p><h3><a href="/pcos-market-intelligence-case-study.html">Finding a clearer position in the PCOS supplement market.</a></h3><p>Connect competitor positioning, search behavior, audience signals, and product reviews to identify a credible position for a new inositol supplement.</p><p class="selected-work-kind">Anonymized client case study</p><a class="selected-work-link" href="/pcos-market-intelligence-case-study.html">Explore the study <span aria-hidden="true"></span><span class="selected-work-sr">: Finding a clearer position in the PCOS supplement market.</span></a></article><article class="selected-work-card"><img class="case-cover " src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1000&q=85" alt="Illustrative photograph of a healthcare professional using a digital device" loading="lazy" width="560" height="280"><p class="eyebrow">Medical devices · Colombia</p><h3><a href="/ophthalmic-syringe-colombia-case-study.html">Evaluating the market for an ophthalmic syringe.</a></h3><p>Combine clinic research, treatment-volume estimates, pricing, and specialist conversations to assess the entry opportunity for a zero-residual syringe.</p><p class="selected-work-kind">Anonymized client case study</p><a class="selected-work-link" href="/ophthalmic-syringe-colombia-case-study.html">Explore the study <span aria-hidden="true"></span><span class="selected-work-sr">: Evaluating the market for an ophthalmic syringe.</span></a></article><article class="selected-work-card"><img class="case-cover evidence-cover" src="/assets/hcp/original-affinity-network-with-clusters-labeled-plastic-surgeons--d1fd2f3521.webp" alt="Healthcare professional affinity network from the research" loading="lazy" width="560" height="280"><p class="eyebrow">Oncology · HCP research</p><h3><a href="/hcp-staff-research.html#hl-case">Understanding clinician audiences before a device launch.</a></h3><p>Use digital profiling, professional affinity networks, and qualitative reviews of public clinician material to inform segmentation and launch communication.</p><p class="selected-work-kind">Anonymized client case study</p><a class="selected-work-link" href="/hcp-staff-research.html#hl-case">Explore the study <span aria-hidden="true"></span><span class="selected-work-sr">: Understanding clinician audiences before a device launch.</span></a></article><article class="selected-work-card"><img class="case-cover evidence-cover" src="/assets/home-uninsured-rate.svg" alt="Map of state uninsured rates from the Census case study" loading="lazy" width="560" height="280"><p class="eyebrow">Population health · Data analytics</p><h3><a href="/census-health-analytics-case-study.html">Mapping the US health insurance gap.</a></h3><p>Compare Census estimates of uninsured rates, population counts, and income groups to identify starting points for access research and outreach planning.</p><p class="selected-work-kind">Independent public-data study</p><a class="selected-work-link" href="/census-health-analytics-case-study.html">Explore the study <span aria-hidden="true"></span><span class="selected-work-sr">: Mapping the US health insurance gap.</span></a></article></div></section>
 
     <section class="approach section">
       <div>
