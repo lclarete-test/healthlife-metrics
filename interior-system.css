@@ -39,6 +39,7 @@ body.hlm-case .evidence-flow{margin-block:28px}
 body.hlm-case :is(.bar-track,.price-meter){background:#262626}
 body.hlm-case .bar-fill{background:var(--ds-accent)}
 body.hlm-case .number,body.hlm-case .headline-number{color:var(--ds-accent)}
+body.hlm-case .topic-core,body.hlm-case .topic-core *,body.hlm-case .review-card h3::before,body.hlm-interior .skip:focus{color:var(--ds-on-accent)}
 body.hlm-case .chips span,body.hlm-case .tag{border-color:var(--ds-border);color:var(--ds-muted);background:var(--ds-surface)}
 body.hlm-case .map,body.hlm-case .chart{background:var(--ds-surface);border-color:var(--ds-border)}
 body.hlm-case :is(.map,.chart) svg{background:#fff;border-radius:3px}
