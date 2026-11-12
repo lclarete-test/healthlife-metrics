@@ -55,26 +55,65 @@ document.querySelector('#analytics-decline')?.addEventListener('click', () => {
   cookieBanner.hidden = true;
 });
 
+const requestContextVersion = '1';
+
+// These are browser-reported hints, not verified identity or network location.
+// Strip query strings and fragments so tokens and other URL parameters are not logged.
+const requestPagePath = (value) => {
+  try {
+    const url = new URL(value);
+    return /^https?:$/.test(url.protocol) ? url.origin + url.pathname : '';
+  } catch {
+    return '';
+  }
+};
+
+const collectRequestContext = () => {
+  let timeZone = '';
+  try {
+    timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
+  } catch {
+    // Metadata collection must never prevent a legitimate request.
+  }
+  return {
+    version: requestContextVersion,
+    page: requestPagePath(window.location.href),
+    referrer: requestPagePath(document.referrer),
+    userAgent: String(navigator.userAgent || '').slice(0, 1024),
+    language: String(navigator.language || '').slice(0, 64),
+    timeZone: String(timeZone).slice(0, 100),
+    submittedAt: new Date().toISOString(),
+    secondsOnPage: Math.round(performance.now() / 100) / 10,
+  };
+};
+
 const quoteForm = document.querySelector('#quote-form');
-const quoteEndpoint = 'https://script.google.com/macros/s/AKfycbxVAemv9TkNnV4XiVVywkcNahWnj4j4FBW0L8CQSnf8GnQHmATQcMalh9w-L8XTnr8E/exec';
+const quoteEndpoint = 'https://healthlife-quote-origin.analyticslivia.workers.dev/quote';
+
+
+const sendQuotePayload = async (payload) => {
+  const response = await fetch(quoteEndpoint, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload),
+  });
+  const result = await response.json();
+  if (!response.ok || result.ok !== true) throw new Error('Request was not saved');
+};
 
 quoteForm?.addEventListener('submit', async (event) => {
   event.preventDefault();
   const note = document.querySelector('#form-note');
   const button = quoteForm.querySelector('button[type="submit"]');
   const payload = Object.fromEntries(new FormData(quoteForm));
+  payload.requestContext = collectRequestContext();
 
   note.setAttribute('role', 'status');
   note.textContent = 'Sending your request...';
   button.disabled = true;
 
   try {
-    await fetch(quoteEndpoint, {
-      method: 'POST',
-      mode: 'no-cors',
-      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-      body: JSON.stringify(payload),
-    });
+    await sendQuotePayload(payload);
 
     if (window.__sitePosthogStarted) window.posthog?.capture('quote_request_submit');
     quoteForm.reset();
@@ -98,15 +137,12 @@ whitepaperForm?.addEventListener('submit', async (event) => {
   const downloadLink = document.querySelector('#whitepaper-download');
   const button = whitepaperForm.querySelector('button[type="submit"]');
   const payload = Object.fromEntries(new FormData(whitepaperForm));
+  payload.requestContext = collectRequestContext();
   payload.marketing_consent = whitepaperForm.querySelector('[name="marketing_consent"]')?.checked ? 'yes' : 'no';
   note.textContent = 'Preparing your report...';
   button.disabled = true;
   try {
-    await fetch(quoteEndpoint, {
-      method: 'POST', mode: 'no-cors',
-      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-      body: JSON.stringify(payload),
-    });
+    await sendQuotePayload(payload);
     if (window.__sitePosthogStarted) window.posthog?.capture('whitepaper_lead_submit', {report: 'hcp_digital_profiling'});
     whitepaperForm.reset();
     note.textContent = 'Your report is ready.';
@@ -135,3 +171,4 @@ exploreWorkLink?.addEventListener('click', (event) => {
   });
   window.history.replaceState(null, '', '#evidence-menu');
 });
+
